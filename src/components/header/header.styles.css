@@ -1,0 +1,9 @@
+.header {
+    display: grid;
+    grid-template-columns: 170px auto;
+    grid-gap: 25px;
+}
+
+.header__content {
+    padding-top: 75px;
+}

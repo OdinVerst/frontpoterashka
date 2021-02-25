@@ -1,0 +1,28 @@
+.contacts {
+    display: grid;
+    grid-template-columns: 170px auto;
+    grid-gap: 25px;
+    padding: 25px 0;
+}
+
+.contacts__title {
+    margin: 0;
+}
+
+.contacts__list {
+    margin: 10px 0 0;
+}
+
+.contacts__item {
+    margin-bottom: 5px;
+}
+
+.contacts__href {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacts__href:hover {
+    text-decoration: underline;
+}

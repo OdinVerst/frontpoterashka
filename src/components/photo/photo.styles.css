@@ -1,0 +1,29 @@
+.photo__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 330px;
+    text-align: center;
+    font-size: 11px;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.photo__wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 10px;
+    width: 70%;
+    background: var(--primary);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.photo {
+    margin: 0 auto;
+    max-width: 143px;
+    border-radius: 25px;
+}
