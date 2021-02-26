@@ -1,0 +1,28 @@
+.theme {
+    position: relative;
+    width: 30px;
+    height: 18px;
+    border-radius: 15px;
+    border: none;
+    background: var(--white);
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.theme::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.theme.active::after {
+    left: calc(100% - (12px + 4px));
+}
+

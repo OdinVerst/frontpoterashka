@@ -14,8 +14,8 @@ export const Picture = ({ imageObj }) => {
     const { name, format, webp, alt, avif } = imageObj;
     return (
         <picture className="picture">
-            {avif && <source srcset={`${dir}${name}.avif 1x, ${collectRetina(imageObj, 'avif')}`} type="image/avif"/>}
-            {webp && <source srcset={`${dir}${name}.webp 1x, ${collectRetina(imageObj, 'webp')}`} type="image/webp"/>}
+            {avif && <source srcSet={`${dir}${name}.avif 1x, ${collectRetina(imageObj, 'avif')}`} type="image/avif"/>}
+            {webp && <source srcSet={`${dir}${name}.webp 1x, ${collectRetina(imageObj, 'webp')}`} type="image/webp"/>}
             <img src={`${dir}${name}.${format}`} alt={alt}/>
         </picture>
     )
