@@ -26,4 +26,5 @@
     margin: 0 auto;
     max-width: 143px;
     border-radius: 25px;
+    overflow: hidden;
 }

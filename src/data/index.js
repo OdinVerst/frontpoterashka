@@ -37,5 +37,21 @@ export const data = {
         "JavaScript",
         "Figma",
         "Svelte"
-    ]
+    ],
+    images: {
+        logo: {
+            name: 'logo',
+            format: 'png',
+            webp: true,
+            retina: true,
+            avif: true
+        },
+        photo: {
+            name: 'photo',
+            format: 'jpg',
+            webp: true,
+            retina: true,
+            avif: true
+        }
+    }
 }

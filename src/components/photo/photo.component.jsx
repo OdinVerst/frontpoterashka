@@ -1,11 +1,15 @@
 import './photo.styles.css';
-import PhotoIMG from './img/photo.jpeg';
+import {data} from '../../data/index';
+import {Picture} from "../picture/picture.conponent";
 
 export const Photo = () => {
+    const { images: { photo } } = data;
     return (
         <div className="photo__wrapper">
             <p>I'm in real life</p>
-            <img className="photo" src={PhotoIMG}/>
+            <div className="photo">
+                <Picture imageObj={photo} />
+            </div>
         </div>
     )
 }
