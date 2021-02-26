@@ -10,3 +10,13 @@
 .job-title__value {
     margin: 0;
 }
+
+.bio__first {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.bio__name {
+    margin: 0;
+}

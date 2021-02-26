@@ -3,8 +3,8 @@ import './bio.styles.css';
 export const BIO = () => {
     return (
         <div className="bio">
-            <div>
-                <h1>Sergey Razdolyanskiy</h1><span>(26 y.o.)</span>
+            <div className="bio__first">
+                <h1 className="bio__name">Sergey Razdolyanskiy</h1><span>(26 y.o.)</span>
             </div>
             <div className="bio__job-title job-title">
                 <p className="job-title__value">FRONT-END DEVELOPER</p>
