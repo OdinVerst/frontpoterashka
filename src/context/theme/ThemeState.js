@@ -12,14 +12,16 @@ const ThemeState = props => {
 	const [state, distpatch] = useReducer(themeReducer, initialState);
 
 	const setTheme = (value) => {
-        distpatch({ type: SET_THEME, payload: value })
+        localStorage.setItem('theme_value', value);
+        distpatch({ type: SET_THEME, payload: value });
     }
 
     const setInitValueTheme = () => {
         const preference_query = window.matchMedia('(prefers-color-scheme: dark)');
         const value = preference_query.matches ? 'dark' : 'light';
 
-        distpatch({ type: SET_THEME, payload: value })
+        const customValue = localStorage.getItem('theme_value');
+        distpatch({ type: SET_THEME, payload: customValue ?  customValue : value })
     }
 
 	return (
