@@ -1,18 +1,18 @@
-import {useContext, useState} from 'react'
-import './theme.styles.css';
+import {useContext} from 'react'
 import ThemeContext from "../../context/theme/themeContext";
 
+import './theme.styles.css';
+
 export const Theme = () => {
-    let [ isActive, setIsActive ] = useState(false);
     const themeContext = useContext(ThemeContext);
-    const { setTheme } = themeContext;
+    const {setTheme} = themeContext;
 
     const toggleThemeHandler = () => {
-        setTheme(isActive ? 'ligth': 'dark')
-        setIsActive(!isActive);
+        setTheme(themeContext.theme === 'dark' ? 'light' : 'dark')
     }
 
     return (
-        <button onClick={toggleThemeHandler} aria-label="Set dark theme" className={`theme ${isActive ? 'active' : ''}`}/>
+        <button onClick={toggleThemeHandler} aria-label="Set dark theme"
+                className={`theme ${themeContext.theme === 'dark' ? 'active' : ''}`}/>
     )
 };

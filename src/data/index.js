@@ -44,7 +44,8 @@ export const data = {
             format: 'png',
             webp: true,
             retina: true,
-            avif: true
+            avif: true,
+            dark: true
         },
         photo: {
             name: 'photo',

@@ -3,26 +3,35 @@ import {Contacts} from "./components/contacts/contacts.component";
 import {Skills} from "./components/skills/skills.component";
 import {Experience} from "./components/experience/experience.component";
 import {Photo} from "./components/photo/photo.component";
-import ThemeState from "./context/theme/ThemeState";
+import {useContext, useEffect} from "react";
+import ThemeContext from "./context/theme/themeContext";
 
 function App() {
+    const themeContext = useContext(ThemeContext);
+    const {setInitValueTheme} = themeContext;
+
+    useEffect(() => {
+        const preference_query = window.matchMedia('(prefers-color-scheme: dark)');
+        preference_query.addListener(setInitValueTheme);
+
+        setInitValueTheme()
+    }, [])
+
     return (
-        <div className="App">
-            <ThemeState>
-                <Header/>
-                <main>
-                    <Contacts/>
-                    <div className="app__wrapper wrapper layout-line">
-                        <div className="app__bl">
-                            <Skills/>
-                            <Photo/>
-                        </div>
-                        <div className="app__bl app__bl--separate">
-                            <Experience/>
-                        </div>
+        <div className="App" data-theme={themeContext.theme}>
+            <Header/>
+            <main>
+                <Contacts/>
+                <div className="app__wrapper wrapper layout-line">
+                    <div className="app__bl">
+                        <Skills/>
+                        <Photo/>
                     </div>
-                </main>
-            </ThemeState>
+                    <div className="app__bl app__bl--separate">
+                        <Experience/>
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }

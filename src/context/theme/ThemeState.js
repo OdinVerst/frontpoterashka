@@ -15,11 +15,19 @@ const ThemeState = props => {
         distpatch({ type: SET_THEME, payload: value })
     }
 
+    const setInitValueTheme = () => {
+        const preference_query = window.matchMedia('(prefers-color-scheme: dark)');
+        const value = preference_query.matches ? 'dark' : 'light';
+
+        distpatch({ type: SET_THEME, payload: value })
+    }
+
 	return (
 		<ThemeContext.Provider
 			value={{
 				theme: state.theme,
-                setTheme
+                setTheme,
+                setInitValueTheme
 			}}
 		>
 			{props.children}

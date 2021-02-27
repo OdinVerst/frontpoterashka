@@ -23,11 +23,25 @@
 }
 
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
     margin: 0;
     font-family: 'Anonymous Pro', monospace;
     font-size: 14px;
+}
+
+.App {
+    --bg-color: var(--bg-light);
+    --text-color: var(--color-text-light);
+    --primary: var(--primary-light);
+
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.App[data-theme="dark"] {
+    --bg-color: var(--bg-dark);
+    --text-color: var(--color-text-dark);
+    --primary: var(--primary-dark)
 }
 
 .wrapper {
@@ -68,12 +82,4 @@ body {
 
 .title {
     margin-top: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: var(--bg-dark);
-        --text-color: var(--color-text-dark);
-        --primary: var(--primary-dark)
-    }
 }
