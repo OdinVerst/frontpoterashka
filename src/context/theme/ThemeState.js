@@ -21,7 +21,7 @@ const ThemeState = props => {
         const value = preference_query.matches ? 'dark' : 'light';
 
         const customValue = localStorage.getItem('theme_value');
-        distpatch({ type: SET_THEME, payload: customValue ?  customValue : value })
+        setTheme(customValue ?  customValue : value );
     }
 
 	return (

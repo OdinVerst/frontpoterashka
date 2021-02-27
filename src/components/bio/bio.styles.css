@@ -5,6 +5,7 @@
     margin-top: 7px;
     font-size: 1.2em;
     text-transform: uppercase;
+    color: var(--text-color-bg);
 }
 
 .job-title__value {

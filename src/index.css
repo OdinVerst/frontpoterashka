@@ -19,7 +19,8 @@
 
     --bg-color: var(--bg-light);
     --text-color: var(--color-text-light);
-    --primary: var(--primary-light)
+    --primary: var(--primary-light);
+    --text-color-bg: var(--black);
 }
 
 body {

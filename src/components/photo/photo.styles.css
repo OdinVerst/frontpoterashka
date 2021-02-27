@@ -8,18 +8,30 @@
     font-size: 11px;
     z-index: 2;
     margin-top: 50px;
+    color: var(--text-color-bg);
+    background: linear-gradient(to right, transparent 15%, var(--primary) 15%, var(--primary) 85%, transparent 85%, transparent 100%);
 }
 
 .photo__wrapper::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
-    bottom: 10px;
-    width: 70%;
-    background: var(--primary);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid var(--text-color-bg);
+    bottom: 155px;
+    left: 40px;
     transform: translateX(-50%);
-    z-index: -1;
+}
+
+.photo__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 2px;
+    height: calc(100% - (143px + (25px * 2)));
+    background: var(--text-color-bg);
+    transform: translateX(-50%);
 }
 
 .photo {
