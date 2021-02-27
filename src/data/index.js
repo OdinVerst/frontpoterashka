@@ -54,5 +54,66 @@ export const data = {
             retina: true,
             avif: true
         }
-    }
+    },
+    main: [
+        {
+            name: 'Experience',
+            type: 'list',
+            data: [
+                {
+                    title: 'Have commercial projects',
+                    values: [
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        },
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        }
+                    ]
+                },
+                {
+                    title: 'Create some small landing pages',
+                    values: [
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        },
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name:
+                'Education',
+            type:
+                'text',
+            data:
+                'Russia, Orel state, Orel Oryol State University of Economics and Trade, Information Technology and Management, Business Informatics'
+        },
+        {
+            name: 'My projects',
+            type: 'list',
+            data: [
+                {
+                    title: 'Have commercial projects',
+                    values: [
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        },
+                        {
+                            name: 'Sample (Sample/Sample/Sample)',
+                            link: 'https://te'
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
 }

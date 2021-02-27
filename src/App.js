@@ -1,7 +1,7 @@
 import {Header} from "./components/header/header.component";
 import {Contacts} from "./components/contacts/contacts.component";
 import {Skills} from "./components/skills/skills.component";
-import {Experience} from "./components/experience/experience.component";
+import { Main } from "./components/main/main.component";
 import {Photo} from "./components/photo/photo.component";
 import {useContext, useEffect} from "react";
 import ThemeContext from "./context/theme/themeContext";
@@ -28,7 +28,7 @@ function App() {
                         <Photo/>
                     </div>
                     <div className="app__bl app__bl--separate">
-                        <Experience/>
+                        <Main/>
                     </div>
                 </div>
             </main>
