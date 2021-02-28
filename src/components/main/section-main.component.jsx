@@ -1,8 +1,12 @@
 import './main.styles.css';
 
+const createMarkup = (text) => {
+    return {__html: text};
+}
+
 const collectContent = (type, data) => {
     if (type === 'text') {
-        return <p>{data}</p>
+        return <p dangerouslySetInnerHTML={createMarkup(data)} />
     } else if (type === 'list') {
         return data.map((el, index) => {
             const {title, values} = el;
