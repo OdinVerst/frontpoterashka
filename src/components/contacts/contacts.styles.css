@@ -26,3 +26,10 @@
 .contacts__href:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 500px) {
+    .contacts {
+        grid-template-columns: 1fr;
+        padding: 0 25px 25px;
+    }
+}

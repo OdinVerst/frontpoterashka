@@ -21,3 +21,9 @@
     width: 170px;
     height: 170px;
 }
+
+@media (max-width: 500px) {
+    .logo-wrapper {
+        align-items: center;
+    }
+}

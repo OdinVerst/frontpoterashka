@@ -32,11 +32,14 @@ export const data = {
         },
     ],
     skills: [
-        "React",
         "HTML",
+        "CSS",
         "JavaScript",
-        "Figma",
-        "Svelte"
+        "React",
+        "Svelte",
+        "TypeScript",
+        "Git",
+        "Figma"
     ],
     images: {
         logo: {

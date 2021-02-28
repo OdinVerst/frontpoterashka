@@ -40,3 +40,27 @@
     border-radius: 25px;
     overflow: hidden;
 }
+
+@media (max-width: 500px) {
+    .photo__wrapper {
+        min-height: 250px;
+        margin-top: -20px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 366px) {
+    .photo__wrapper {
+        min-height: auto;
+        margin-top: 0;
+        flex-shrink: 0;
+        width: 145px;
+    }
+    .photo__wrapper::after, .photo__wrapper::before {
+        display: none;
+    }
+
+    .photo {
+        width: 120px;
+    }
+}

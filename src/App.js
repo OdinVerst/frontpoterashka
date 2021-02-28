@@ -23,7 +23,7 @@ function App() {
             <main>
                 <Contacts/>
                 <div className="app__wrapper wrapper layout-line">
-                    <div className="app__bl">
+                    <div className="app__bl app__bl--lf">
                         <Skills/>
                         <Photo/>
                     </div>

@@ -84,3 +84,25 @@ body {
 .title {
     margin-top: 0;
 }
+
+@media (max-width: 500px) {
+    .layout-line {
+        grid-template-columns: 1fr;
+    }
+
+    .app__bl--lf {
+        display: flex;
+        padding: 0 25px;
+    }
+
+    .app__bl--separate {
+        padding: 0 25px;
+        margin-top: -55px;
+    }
+}
+
+@media (max-width: 366px) {
+    .app__bl--separate {
+        margin-top: 0;
+    }
+}
