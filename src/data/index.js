@@ -67,6 +67,10 @@ export const data = {
                             link: 'https://countart.ru/'
                         },
                         {
+                            name: 'Try Coffee (11ty)',
+                            link: 'https://trycoffee.vercel.app/'
+                        },
+                        {
                             name: 'Intelligent Hookah (HTML/CSS/JS)',
                             link: 'https://intelligenthookah.com/'
                         },
