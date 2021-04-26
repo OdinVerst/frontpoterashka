@@ -71,7 +71,7 @@ export const data = {
                             link: 'https://trycoffee.vercel.app/'
                         },
                         {
-                            name: 'Intelligent Hookah (HTML/CSS/JS)',
+                            name: 'Intelligent Hookah (Svelte/ Sapper)',
                             link: 'https://intelligenthookah.com/'
                         },
                         {
