@@ -145,7 +145,7 @@ export const data = {
             type:
                 'text',
             data:
-                'Alfa Site - WEB developer (2018-2019) <br><br> VMGR - Frontend developer (2019-2021)'
+                'Pyrus - Frontend developer (2021-now)<br><br>VMGR - Frontend developer (2019-2021)<br><br> Alfa Site - WEB developer (2018-2019)'
         },
     ]
 }
