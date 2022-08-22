@@ -1,4 +1,8 @@
 export const data = {
+    name: "Sergey Razdolyanskiy",
+    age: "27",
+    jobTitle: "FRONT-END DEVELOPER",
+    birthdayDescription: "Birthday party every year 21.07",
     contacts: [
         {
             id: 1,

@@ -1,5 +1,6 @@
-import {data} from "../../data";
 import './skills.styles.css';
+
+import {data} from "../../data";
 
 export const Skills = () => {
     const { skills } = data;

@@ -1,6 +1,7 @@
-import './picture.styles.css';
 import {useContext} from "react";
 import ThemeContext from "../../context/theme/themeContext";
+
+import './picture.styles.css';
 
 const dir = '/images/';
 

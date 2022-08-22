@@ -1,6 +1,7 @@
-import './photo.styles.css';
 import {data} from '../../data/index';
 import {Picture} from "../picture/picture.conponent";
+
+import './photo.styles.css';
 
 export const Photo = () => {
     const { images: { photo } } = data;

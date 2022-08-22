@@ -1,6 +1,7 @@
 import {data} from '../../data/index';
-import './main.styles.css';
 import {SectionMain} from "./section-main.component";
+
+import './main.styles.css';
 
 export const Main = () => {
     const { main } = data;
