@@ -20,7 +20,7 @@ export const data = {
             id: 3,
             name: "LinkedIn",
             value: "Sergey Razdolyanskiy",
-            link: "https://www.linkedin.com/in/сергей-раздолянский-3270ba117/"
+            link: "https://www.linkedin.com/in/sergey-razdolyanskiy/"
         },
         {
             id: 4,
@@ -33,9 +33,8 @@ export const data = {
         "HTML",
         "CSS",
         "JavaScript",
-        "React",
-        "Svelte",
         "TypeScript",
+        "React",
         "Git",
         "Figma"
     ],
@@ -71,8 +70,8 @@ export const data = {
                             link: 'https://countart.ru/'
                         },
                         {
-                            name: 'Try Coffee (11ty)',
-                            link: 'https://trycoffee.vercel.app/'
+                            name: 'Try brew (11ty)',
+                            link: 'https://trybrew.app/'
                         },
                         {
                             name: 'Intelligent Hookah (Svelte/ Sapper)',
@@ -82,10 +81,6 @@ export const data = {
                             name: 'Textelle - mobile (HTML/CSS/JS)',
                             link: 'https://www.textelle.ru/'
                         },
-                        {
-                            name: 'Vdali Poshtel (HTML/CSS/JS/PHP)',
-                            link: 'https://vdaliposhtel.ru/'
-                        }
                     ]
                 },
                 {
@@ -101,19 +96,6 @@ export const data = {
                         }
                     ]
                 },
-                {
-                    title: 'Learning projects',
-                    values: [
-                        {
-                            name: 'Shop React (React/Node/Firebase)',
-                            link: 'https://ecom-react-udem.herokuapp.com/'
-                        },
-                        {
-                            name: 'Contact Keeper (React/Node)',
-                            link: 'https://stark-caverns-41296.herokuapp.com/login'
-                        },
-                    ]
-                }
             ]
         },
         {
@@ -122,7 +104,7 @@ export const data = {
             type:
                 'text',
             data:
-                'Russia, Orel state, Orel Oryol State University of Economics and Trade, Information Technology and Management, Business Informatics'
+                'Russia, Orel State University of Economics and Trade, Information Technology and Management, Business Informatics'
         },
         {
             name: 'Speaker',
